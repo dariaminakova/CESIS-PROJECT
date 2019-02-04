@@ -1,0 +1,176 @@
+/*Gallary style*/
+
+.gallary-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-list {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+    grid-gap: 20px;
+    margin: auto 8%;
+}
+
+.grid-container > div {
+    min-width: 350px;
+    min-height: 385px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+}
+
+.grid-item-1 {
+    background: url(../img/photo-canon.png);
+    grid-area: 1/1/3/3;
+}
+
+.grid-item-2 {
+    background: url(../img/cup-and-notebook.png);
+    grid-area: 1/3/2/5;
+}
+
+.grid-item-3 {
+    background: url(../img/smartwatch.png);
+    grid-area: 2/3/3/5;
+}
+
+.grid-item-4 {
+    background: url(../img/girl-on-the-beach.png);
+    grid-area: 3/1/5/2;
+}
+
+.grid-item-5 {
+    background: url(../img/kinfolk.png);
+    grid-area: 3/2/5/4;
+}
+
+.grid-item-6 {
+    background: url(../img/blue-window.png);
+    grid-area: 3/4/4/5;
+}
+
+.grid-item-7 {
+    background: url(../img/boy.png);
+    grid-area: 4/4/5/5;
+}
+
+.grid-item-8 {
+    background: url(../img/wood-staf.png);
+    grid-area: 5/1/7/3;
+}
+
+.grid-item-9 {
+    background: url(../img/creepy-diver.png);
+    grid-area: 5/3/7/5;
+}
+
+.grid-text {
+    margin: 2%;
+}
+
+.grid-subtitle {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.9px;
+}
+
+.grid-title {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+}
+
+.filter-btn {
+    border: none;
+    background-image: none; 
+    background: transparent;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100px;
+    color: #818586;
+}
+    
+.filter-btn:focus {
+    color: #2a2d2e;
+}
+
+.white-btn-position {
+    text-align: center;
+}
+
+/*Gallary style*/
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1200px) {
+    
+    .filter-btn {
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 75px;
+    }
+
+    .grid-subtitle {
+        display: none;
+    }
+
+    .grid-title {
+        display: none;
+    }
+
+    .grid-item-4 {
+        background: url(../img/girl-on-the-beach.png);
+        grid-area: 3/1/5/3;
+    }
+    
+    .grid-item-5 {
+        background: url(../img/kinfolk.png);
+        grid-area: 3/3/5/5;
+    }
+    
+    .grid-item-6 {
+        background: url(../img/blue-window.png);
+        grid-area: 5/1/6/3;
+    }
+    
+    .grid-item-7 {
+        background: url(../img/boy.png);
+        grid-area: 5/3/6/5;
+    }
+    
+    .grid-item-8 {
+        background: url(../img/wood-staf.png);
+        grid-area: 6/1/7/3;
+    }
+    
+    .grid-item-9 {
+        background: url(../img/creepy-diver.png);
+        grid-area: 6/3/7/5;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container > div {
+        margin: 2% 0;
+    }
+}
