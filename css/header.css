@@ -123,22 +123,3 @@ button {
     font-weight: bolder;    
 }
 
-/*header style*/
-
-@media screen and (max-width: 1200px) {
-
-    .header-btn {
-        border-radius: 32px;
-        border: 1px solid #ffffff;
-        background-image: none; 
-        background: transparent;
-        background-color: transparent;
-        color: #ffffff;
-        font-family: 'Poppins', sans-serif;
-        font-size: 10px;
-        font-weight: 200;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-top: 10px;
-    }
-}
